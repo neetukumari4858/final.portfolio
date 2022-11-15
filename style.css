@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 
+html {
+    font-size: 62.5%;
+}
+
 .root {
     --primary-color: #1E40AF;
 }
 
 body {
-    /* font-family: 'Merriweather', serif; */
     font-family: 'Montserrat', sans-serif;
-    margin: 0px
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -15,7 +20,7 @@ body {
 }
 
 .container-center {
-    max-width: 600px;
+    max-width: 800rem;
     margin: auto;
     margin-top: 2rem;
     text-align: center;
@@ -39,16 +44,41 @@ body {
 }
 
 .primary {
+    color: #1E40AF;
+    border-radius: 0.5rem;
+    padding: 1rem 1.3rem;
+    border: 0.1rem solid #1E40AF;
+    font-size: 1.7rem;
+    margin-bottom: 1.4rem;
+}
+
+.seconday_btn {
     background-color: #1E40AF;
     color: white;
     border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.3rem;
+    font-size: 1.7rem;
+    margin-bottom: 1.4rem;
+}
+
+.seconday_btn:hover {
+    color: #1E40AF;
+    border: 0.1rem solid #1E40AF;
+    background-color: #DBEAFE;
+
+
+}
+
+.primary:hover {
+    background-color: #1E40AF;
+    color: white;
 }
 
 .list-non-bullet {
     list-style: none;
     font-size: 1.1rem;
 }
+
 .footer_list-non-bullet {
     list-style: none;
     display: flex;
@@ -67,28 +97,18 @@ body {
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
-    height: 4rem;
+    height: 7rem;
 }
 
 .nav-pills {
     text-align: right;
-    margin-top: -1.9rem;
+    margin-top: -3rem;
     font-weight: 900;
+    font-size: 1.8rem;
 }
 
 .navigation.link-active {
     font-weight: bold;
-}
-
-.sec h2 {
-    text-align: center;
-    padding: 0.3rem;
-}
-
-.os {
-    background-color: #BFDBFE;
-    padding-bottom: 2rem;
-
 }
 
 .par-center {
@@ -119,7 +139,7 @@ body {
 
 .head_cl {
     color: #f50057;
-    
+
 }
 
 .python-align {
@@ -129,40 +149,94 @@ body {
 
 .par-center {
 
+
     padding-top: 2rem;
 }
 
 .neetu_heading {
-    font-size: 1.5rem;
-    margin: 1rem;
+    font-size: 2.5rem;
+    margin: 2rem;
 
 }
 
 /* footer */
-.quizGithubIcon{
+
+.quizIcon {
     color: white;
-    font-size:2rem;
+    font-size: 3rem;
 }
-.quizIcon{
-    color: white;
-    font-size:1.8rem;
-}
-.image_container{
+
+.image_container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
-.image_size{
-    height: 20rem;
+
+.image_size {
     width: 50rem;
 }
-.tech_container{
+
+.tech_container {
     display: flex;
+    gap: 9rem;
+    flex-wrap: wrap;
 
 }
-.react_image{
-    height: 3rem;
-    width: 3rem;
+
+.tech_image {
+    height: 5rem;
+    width: 6rem;
+}
+
+.row_text {
+    font-size: 2rem;
+}
+
+.bottom_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DBEAFE;
+    margin: 5rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.center_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.degignation {
+    font-size: 3rem;
+    color: rgb(238, 6, 83);
+    font-weight: 900;
+    margin-top: 2rem;
+}
+
+.primary_space {
+    position: relative;
+    top: 1rem;
+}
+
+.tech_heading {
+    font-size: 2.5rem;
+}
+
+.tech_text {
+    font-size: 1.8rem;
+}
+
+/* Project */
+
+.project_btn_div {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
 }
