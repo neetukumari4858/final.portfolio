@@ -4,8 +4,10 @@ html {
     font-size: 62.5%;
 }
 
-.root {
+:root {
     --primary-color: #1E40AF;
+    --secondary-color: #f50057;
+    --light-sky_blue-color:#DBEAFE;
 }
 
 body {
@@ -44,16 +46,16 @@ body {
 }
 
 .primary {
-    color: #1E40AF;
+    color:var(--primary-color);
     border-radius: 0.5rem;
     padding: 1rem 1.3rem;
-    border: 0.1rem solid #1E40AF;
+    border: 0.1rem solid var(--primary-color);
     font-size: 1.7rem;
     margin-bottom: 1.4rem;
 }
 
 .seconday_btn {
-    background-color: #1E40AF;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 0.5rem;
     padding: 1rem 1.3rem;
@@ -62,15 +64,15 @@ body {
 }
 
 .seconday_btn:hover {
-    color: #1E40AF;
-    border: 0.1rem solid #1E40AF;
-    background-color: #DBEAFE;
+    color: var(--primary-color);
+    border: 0.1rem solid var(--primary-color);
+    background-color: var(--light-sky_blue-color);
 
 
 }
 
 .primary:hover {
-    background-color: #1E40AF;
+    background-color:var(--primary-color);
     color: white;
 }
 
@@ -93,7 +95,7 @@ body {
 }
 
 .navigation {
-    background-color: #2047c6;
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
@@ -107,8 +109,8 @@ body {
     font-size: 1.8rem;
 }
 
-.navigation.link-active {
-    font-weight: bold;
+.navigation .link_active {
+    color: var(--secondary-color);
 }
 
 .par-center {
@@ -118,7 +120,7 @@ body {
 }
 
 .footer_color {
-    background-color: #1E40AF;
+    background-color: var(--primary-color);
     border-top-right-radius: 1rem;
     padding: 1rem;
     margin-top: 2rem;
@@ -133,12 +135,12 @@ body {
 }
 
 .clo {
-    background-color: #BFDBFE;
+    background-color:var(--light-sky_blue-color);
     padding-bottom: 2rem;
 }
 
 .head_cl {
-    color: #f50057;
+    color: var(--secondary-color);
 
 }
 
@@ -158,8 +160,6 @@ body {
     margin: 2rem;
 
 }
-
-/* footer */
 
 .quizIcon {
     color: white;
@@ -181,6 +181,7 @@ body {
     display: flex;
     gap: 9rem;
     flex-wrap: wrap;
+    margin: 3rem;
 
 }
 
@@ -191,6 +192,7 @@ body {
 
 .row_text {
     font-size: 2rem;
+    margin: 1rem;
 }
 
 .bottom_section {
@@ -198,7 +200,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #DBEAFE;
+    background-color:var(--light-sky_blue-color);
     margin: 5rem;
     gap: 1rem;
     border-radius: 1rem;
@@ -215,7 +217,7 @@ body {
 
 .degignation {
     font-size: 3rem;
-    color: rgb(238, 6, 83);
+    color: var(--secondary-color);
     font-weight: 900;
     margin-top: 2rem;
 }
@@ -233,10 +235,14 @@ body {
     font-size: 1.8rem;
 }
 
-/* Project */
 
 .project_btn_div {
     margin-bottom: 2rem;
     display: flex;
     gap: 2rem;
+    justify-content: center;
+}
+
+.project_heading {
+    margin-top: 2.5rem;
 }
